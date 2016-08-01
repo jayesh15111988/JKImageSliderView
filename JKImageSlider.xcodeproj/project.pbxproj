@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385193371D4D767C00A6FF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385193361D4D767C00A6FF38 /* AppDelegate.swift */; };
+		385193391D4D767C00A6FF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385193381D4D767C00A6FF38 /* ViewController.swift */; };
+		3851933C1D4D767C00A6FF38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3851933A1D4D767C00A6FF38 /* Main.storyboard */; };
+		3851933E1D4D767C00A6FF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3851933D1D4D767C00A6FF38 /* Assets.xcassets */; };
+		385193411D4D767C00A6FF38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3851933F1D4D767C00A6FF38 /* LaunchScreen.storyboard */; };
+		3851934C1D4D767C00A6FF38 /* JKImageSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851934B1D4D767C00A6FF38 /* JKImageSliderTests.swift */; };
+		385193591D4EB83800A6FF38 /* JKImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385193581D4EB83800A6FF38 /* JKImageSliderView.swift */; };
+		385193601D4EBD1300A6FF38 /* girlRunning.png in Resources */ = {isa = PBXBuildFile; fileRef = 3851935B1D4EBD1300A6FF38 /* girlRunning.png */; };
+		385193611D4EBD1300A6FF38 /* changeColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3851935C1D4EBD1300A6FF38 /* changeColor.png */; };
+		385193621D4EBD1300A6FF38 /* donald.png in Resources */ = {isa = PBXBuildFile; fileRef = 3851935D1D4EBD1300A6FF38 /* donald.png */; };
+		385193631D4EBD1300A6FF38 /* cone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3851935E1D4EBD1300A6FF38 /* cone.png */; };
+		385193641D4EBD1300A6FF38 /* spriteAnimationRunning.png in Resources */ = {isa = PBXBuildFile; fileRef = 3851935F1D4EBD1300A6FF38 /* spriteAnimationRunning.png */; };
+		385193671D4EBDD300A6FF38 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 385193651D4EBDD300A6FF38 /* left_arrow.png */; };
+		385193681D4EBDD300A6FF38 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 385193661D4EBDD300A6FF38 /* right_arrow.png */; };
+		3851936B1D4EC65B00A6FF38 /* bullet_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 385193691D4EC65B00A6FF38 /* bullet_black.png */; };
+		3851936C1D4EC65B00A6FF38 /* bullet_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 3851936A1D4EC65B00A6FF38 /* bullet_grey.png */; };
+		3851936E1D4EC69400A6FF38 /* JKBulletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851936D1D4EC69400A6FF38 /* JKBulletView.swift */; };
+		64556DCC5918B0771B5F62E2 /* Pods_JKImageSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DCB89D464DE4869FDFDC06 /* Pods_JKImageSlider.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		385193481D4D767C00A6FF38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3851932B1D4D767C00A6FF38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 385193321D4D767C00A6FF38;
+			remoteInfo = JKImageSlider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D49BE1741B386F6C29A07AB /* Pods-JKImageSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKImageSlider.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKImageSlider/Pods-JKImageSlider.release.xcconfig"; sourceTree = "<group>"; };
+		385193331D4D767C00A6FF38 /* JKImageSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKImageSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		385193361D4D767C00A6FF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		385193381D4D767C00A6FF38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3851933B1D4D767C00A6FF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3851933D1D4D767C00A6FF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		385193401D4D767C00A6FF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		385193421D4D767C00A6FF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385193471D4D767C00A6FF38 /* JKImageSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKImageSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3851934B1D4D767C00A6FF38 /* JKImageSliderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKImageSliderTests.swift; sourceTree = "<group>"; };
+		3851934D1D4D767C00A6FF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385193581D4EB83800A6FF38 /* JKImageSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKImageSliderView.swift; sourceTree = "<group>"; };
+		3851935B1D4EBD1300A6FF38 /* girlRunning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girlRunning.png; sourceTree = "<group>"; };
+		3851935C1D4EBD1300A6FF38 /* changeColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeColor.png; sourceTree = "<group>"; };
+		3851935D1D4EBD1300A6FF38 /* donald.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donald.png; sourceTree = "<group>"; };
+		3851935E1D4EBD1300A6FF38 /* cone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cone.png; sourceTree = "<group>"; };
+		3851935F1D4EBD1300A6FF38 /* spriteAnimationRunning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spriteAnimationRunning.png; sourceTree = "<group>"; };
+		385193651D4EBDD300A6FF38 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		385193661D4EBDD300A6FF38 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		385193691D4EC65B00A6FF38 /* bullet_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet_black.png; sourceTree = "<group>"; };
+		3851936A1D4EC65B00A6FF38 /* bullet_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet_grey.png; sourceTree = "<group>"; };
+		3851936D1D4EC69400A6FF38 /* JKBulletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBulletView.swift; sourceTree = "<group>"; };
+		59DCB89D464DE4869FDFDC06 /* Pods_JKImageSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKImageSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC92739BEAFF3EEAEEA1EDF9 /* Pods-JKImageSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKImageSlider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKImageSlider/Pods-JKImageSlider.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		385193301D4D767C00A6FF38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64556DCC5918B0771B5F62E2 /* Pods_JKImageSlider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385193441D4D767C00A6FF38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3851932A1D4D767C00A6FF38 = {
+			isa = PBXGroup;
+			children = (
+				385193351D4D767C00A6FF38 /* JKImageSlider */,
+				3851934A1D4D767C00A6FF38 /* JKImageSliderTests */,
+				385193341D4D767C00A6FF38 /* Products */,
+				A516ED0CB3FFE042D38B499E /* Pods */,
+				6F8EEB9A1372236633FDCEA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		385193341D4D767C00A6FF38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				385193331D4D767C00A6FF38 /* JKImageSlider.app */,
+				385193471D4D767C00A6FF38 /* JKImageSliderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		385193351D4D767C00A6FF38 /* JKImageSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3851935A1D4EBCFB00A6FF38 /* Demo Images */,
+				385193571D4EB7ED00A6FF38 /* assets */,
+				385193561D4EB7DE00A6FF38 /* library */,
+				385193361D4D767C00A6FF38 /* AppDelegate.swift */,
+				385193381D4D767C00A6FF38 /* ViewController.swift */,
+				3851933A1D4D767C00A6FF38 /* Main.storyboard */,
+				3851933D1D4D767C00A6FF38 /* Assets.xcassets */,
+				3851933F1D4D767C00A6FF38 /* LaunchScreen.storyboard */,
+				385193421D4D767C00A6FF38 /* Info.plist */,
+			);
+			path = JKImageSlider;
+			sourceTree = "<group>";
+		};
+		3851934A1D4D767C00A6FF38 /* JKImageSliderTests */ = {
+			isa = PBXGroup;
+			children = (
+				3851934B1D4D767C00A6FF38 /* JKImageSliderTests.swift */,
+				3851934D1D4D767C00A6FF38 /* Info.plist */,
+			);
+			path = JKImageSliderTests;
+			sourceTree = "<group>";
+		};
+		385193561D4EB7DE00A6FF38 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				385193581D4EB83800A6FF38 /* JKImageSliderView.swift */,
+				3851936D1D4EC69400A6FF38 /* JKBulletView.swift */,
+			);
+			name = library;
+			sourceTree = "<group>";
+		};
+		385193571D4EB7ED00A6FF38 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				385193691D4EC65B00A6FF38 /* bullet_black.png */,
+				3851936A1D4EC65B00A6FF38 /* bullet_grey.png */,
+				385193651D4EBDD300A6FF38 /* left_arrow.png */,
+				385193661D4EBDD300A6FF38 /* right_arrow.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		3851935A1D4EBCFB00A6FF38 /* Demo Images */ = {
+			isa = PBXGroup;
+			children = (
+				3851935B1D4EBD1300A6FF38 /* girlRunning.png */,
+				3851935C1D4EBD1300A6FF38 /* changeColor.png */,
+				3851935D1D4EBD1300A6FF38 /* donald.png */,
+				3851935E1D4EBD1300A6FF38 /* cone.png */,
+				3851935F1D4EBD1300A6FF38 /* spriteAnimationRunning.png */,
+			);
+			name = "Demo Images";
+			sourceTree = "<group>";
+		};
+		6F8EEB9A1372236633FDCEA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DCB89D464DE4869FDFDC06 /* Pods_JKImageSlider.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A516ED0CB3FFE042D38B499E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC92739BEAFF3EEAEEA1EDF9 /* Pods-JKImageSlider.debug.xcconfig */,
+				2D49BE1741B386F6C29A07AB /* Pods-JKImageSlider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		385193321D4D767C00A6FF38 /* JKImageSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385193501D4D767C00A6FF38 /* Build configuration list for PBXNativeTarget "JKImageSlider" */;
+			buildPhases = (
+				4D79120D9CB11C9887580728 /* [CP] Check Pods Manifest.lock */,
+				3851932F1D4D767C00A6FF38 /* Sources */,
+				385193301D4D767C00A6FF38 /* Frameworks */,
+				385193311D4D767C00A6FF38 /* Resources */,
+				1D5C1DEB24DFF28203D939E7 /* [CP] Embed Pods Frameworks */,
+				E00C5265E679901A76341344 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKImageSlider;
+			productName = JKImageSlider;
+			productReference = 385193331D4D767C00A6FF38 /* JKImageSlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		385193461D4D767C00A6FF38 /* JKImageSliderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385193531D4D767C00A6FF38 /* Build configuration list for PBXNativeTarget "JKImageSliderTests" */;
+			buildPhases = (
+				385193431D4D767C00A6FF38 /* Sources */,
+				385193441D4D767C00A6FF38 /* Frameworks */,
+				385193451D4D767C00A6FF38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				385193491D4D767C00A6FF38 /* PBXTargetDependency */,
+			);
+			name = JKImageSliderTests;
+			productName = JKImageSliderTests;
+			productReference = 385193471D4D767C00A6FF38 /* JKImageSliderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3851932B1D4D767C00A6FF38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jayesh Kawli Backup";
+				TargetAttributes = {
+					385193321D4D767C00A6FF38 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					385193461D4D767C00A6FF38 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 385193321D4D767C00A6FF38;
+					};
+				};
+			};
+			buildConfigurationList = 3851932E1D4D767C00A6FF38 /* Build configuration list for PBXProject "JKImageSlider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3851932A1D4D767C00A6FF38;
+			productRefGroup = 385193341D4D767C00A6FF38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				385193321D4D767C00A6FF38 /* JKImageSlider */,
+				385193461D4D767C00A6FF38 /* JKImageSliderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		385193311D4D767C00A6FF38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385193631D4EBD1300A6FF38 /* cone.png in Resources */,
+				385193411D4D767C00A6FF38 /* LaunchScreen.storyboard in Resources */,
+				385193601D4EBD1300A6FF38 /* girlRunning.png in Resources */,
+				3851933E1D4D767C00A6FF38 /* Assets.xcassets in Resources */,
+				385193621D4EBD1300A6FF38 /* donald.png in Resources */,
+				385193641D4EBD1300A6FF38 /* spriteAnimationRunning.png in Resources */,
+				385193671D4EBDD300A6FF38 /* left_arrow.png in Resources */,
+				3851933C1D4D767C00A6FF38 /* Main.storyboard in Resources */,
+				385193681D4EBDD300A6FF38 /* right_arrow.png in Resources */,
+				385193611D4EBD1300A6FF38 /* changeColor.png in Resources */,
+				3851936C1D4EC65B00A6FF38 /* bullet_grey.png in Resources */,
+				3851936B1D4EC65B00A6FF38 /* bullet_black.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385193451D4D767C00A6FF38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D5C1DEB24DFF28203D939E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKImageSlider/Pods-JKImageSlider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D79120D9CB11C9887580728 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E00C5265E679901A76341344 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKImageSlider/Pods-JKImageSlider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3851932F1D4D767C00A6FF38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385193391D4D767C00A6FF38 /* ViewController.swift in Sources */,
+				3851936E1D4EC69400A6FF38 /* JKBulletView.swift in Sources */,
+				385193371D4D767C00A6FF38 /* AppDelegate.swift in Sources */,
+				385193591D4EB83800A6FF38 /* JKImageSliderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385193431D4D767C00A6FF38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3851934C1D4D767C00A6FF38 /* JKImageSliderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		385193491D4D767C00A6FF38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 385193321D4D767C00A6FF38 /* JKImageSlider */;
+			targetProxy = 385193481D4D767C00A6FF38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3851933A1D4D767C00A6FF38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3851933B1D4D767C00A6FF38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3851933F1D4D767C00A6FF38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385193401D4D767C00A6FF38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3851934E1D4D767C00A6FF38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3851934F1D4D767C00A6FF38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		385193511D4D767C00A6FF38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC92739BEAFF3EEAEEA1EDF9 /* Pods-JKImageSlider.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKImageSlider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKImageSlider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		385193521D4D767C00A6FF38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D49BE1741B386F6C29A07AB /* Pods-JKImageSlider.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKImageSlider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKImageSlider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		385193541D4D767C00A6FF38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKImageSliderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKImageSliderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKImageSlider.app/JKImageSlider";
+			};
+			name = Debug;
+		};
+		385193551D4D767C00A6FF38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKImageSliderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKImageSliderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKImageSlider.app/JKImageSlider";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3851932E1D4D767C00A6FF38 /* Build configuration list for PBXProject "JKImageSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3851934E1D4D767C00A6FF38 /* Debug */,
+				3851934F1D4D767C00A6FF38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385193501D4D767C00A6FF38 /* Build configuration list for PBXNativeTarget "JKImageSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385193511D4D767C00A6FF38 /* Debug */,
+				385193521D4D767C00A6FF38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385193531D4D767C00A6FF38 /* Build configuration list for PBXNativeTarget "JKImageSliderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385193541D4D767C00A6FF38 /* Debug */,
+				385193551D4D767C00A6FF38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3851932B1D4D767C00A6FF38 /* Project object */;
+}
