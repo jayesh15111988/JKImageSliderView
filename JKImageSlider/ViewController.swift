@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, JKSliderViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +16,18 @@ class ViewController: UIViewController {
         imageSwipeView.translatesAutoresizingMaskIntoConstraints = false
         imageSwipeView.imageAnimationDuration = 0.5
         imageSwipeView.swipeEnabled = true
+        imageSwipeView.delegate = self        
+        imageSwipeView.layer.borderColor = UIColor.lightGrayColor().CGColor
+        imageSwipeView.layer.borderWidth = 1.0
         self.view.addSubview(imageSwipeView)
         let views = ["imageSwipeView": imageSwipeView]
-        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[imageSwipeView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
-        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-100-[imageSwipeView(200)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
+        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-5-[imageSwipeView]-5-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
+        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-64-[imageSwipeView(200)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func indexChanged(to newIndex: Int) {
+        
     }
 
 

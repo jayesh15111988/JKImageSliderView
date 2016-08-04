@@ -14,6 +14,10 @@ enum JKImageSliderViewImageType {
     case ImageTypeImage
 }
 
+protocol JKSliderViewDelegate: class {
+    func indexChanged(to newIndex: Int)
+}
+
 
 class JKImageSliderView: UIView {
     
@@ -32,6 +36,14 @@ class JKImageSliderView: UIView {
             swipeViewTransition.duration = imageAnimationDuration
         }
     }
+    
+    var showBulletView: Bool {
+        didSet {
+            bulletView?.hidden = !showBulletView
+        }
+    }
+    
+    weak var delegate: JKSliderViewDelegate?
     var bulletView: JKBulletView?
     
     var swipeEnabled: Bool {
@@ -62,6 +74,7 @@ class JKImageSliderView: UIView {
         imageType = .ImageTypeImage
         placeHolder = placeholderImage ?? UIImage()
         swipeImageView = UIImageView()
+        showBulletView = true
         super.init(frame: CGRect.zero)
         self.initializeGestureRecognizers()
         self.setupImageViews()
@@ -79,6 +92,7 @@ class JKImageSliderView: UIView {
         imageType = .ImageTypeURL
         swipeImageView = UIImageView()
         placeHolder = placeholderImage ?? UIImage()
+        showBulletView = true
         super.init(frame: CGRect.zero)
         self.initializeGestureRecognizers()
         self.setupImageViews()
@@ -125,6 +139,7 @@ class JKImageSliderView: UIView {
             self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[rightArrowButton(30)]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: arrowViews))
             
             bulletView = JKBulletView(numberOfBullets: imagesCount)
+            bulletView?.animationDuration = self.imageAnimationDuration
             if let bulletV = bulletView {
                 bulletV.animationDuration = self.imageAnimationDuration
                 bulletV.translatesAutoresizingMaskIntoConstraints = false
@@ -164,6 +179,9 @@ class JKImageSliderView: UIView {
             swipeImageView.sd_setImageWithURL(imageURLs[currentImageIndex], placeholderImage: placeHolder, options: .HighPriority)
         } else {
             swipeImageView.image = images[currentImageIndex]
+        }
+        if let delegate = delegate {
+            delegate.indexChanged(to: currentImageIndex)
         }
     }
     
