@@ -34,6 +34,7 @@ class JKImageSliderView: UIView {
     var imageAnimationDuration: CFTimeInterval {
         didSet {
             swipeViewTransition.duration = imageAnimationDuration
+            bulletView?.animationDuration = imageAnimationDuration
         }
     }
     
