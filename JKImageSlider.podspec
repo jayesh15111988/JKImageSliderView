@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = 'JKImageSlider'
-  s.version       = '0.2'
+  s.version       = '0.3'
   s.license       = 'MIT'
   s.summary       = 'Native image slider'
   s.homepage      = 'https://github.com/jayesh15111988'

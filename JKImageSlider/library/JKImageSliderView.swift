@@ -63,7 +63,7 @@ class JKImageSliderView: UIView {
         }
     }
     
-    init (images: [UIImage], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = false) {
+    init (images: [UIImage], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = true) {
         self.images = images
         self.imageURLs = []
         self.imagesCount = self.images.count
@@ -75,13 +75,13 @@ class JKImageSliderView: UIView {
         imageType = .ImageTypeImage
         placeHolder = placeholderImage ?? UIImage()
         swipeImageView = UIImageView()
-        showBulletView = true
+        showBulletView = showBullets
         super.init(frame: CGRect.zero)
         self.initializeGestureRecognizers()
         self.setupImageViews()
     }
     
-    init (imageURLs: [NSURL], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = false) {
+    init (imageURLs: [NSURL], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = true) {
         self.images = []
         self.imageURLs = imageURLs
         self.imagesCount = self.imageURLs.count
@@ -93,7 +93,7 @@ class JKImageSliderView: UIView {
         imageType = .ImageTypeURL
         swipeImageView = UIImageView()
         placeHolder = placeholderImage ?? UIImage()
-        showBulletView = true
+        showBulletView = showBullets
         super.init(frame: CGRect.zero)
         self.initializeGestureRecognizers()
         self.setupImageViews()
