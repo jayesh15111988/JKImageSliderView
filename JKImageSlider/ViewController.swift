@@ -63,8 +63,8 @@ class ViewController: UIViewController, JKSliderViewDelegate {
         return imageSwipeView
     }
     
-    func indexChanged(to newIndex: Int) {
-        print("Slider index changed to \(newIndex)")
+    func indexChanged(to newIndex: NSNumber) {
+        print("Slider index changed to \(newIndex.integerValue)")
     }
 
 

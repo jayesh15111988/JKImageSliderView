@@ -14,40 +14,39 @@ enum JKImageSliderViewImageType {
     case ImageTypeImage
 }
 
-protocol JKSliderViewDelegate: class {
-    func indexChanged(to newIndex: Int)
+public protocol JKSliderViewDelegate: class {
+    func indexChanged(to newIndex: NSNumber)
 }
 
-
-class JKImageSliderView: UIView {
+public class JKImageSliderView: UIView {
     
     let images: [UIImage]
     let imageURLs: [NSURL]
     var leftSwipeGestureRecognizer: UISwipeGestureRecognizer?
     var rightSwipeGestureRecognizer: UISwipeGestureRecognizer?
-    var currentImageIndex: Int
+    public var currentImageIndex: Int
     var swipeViewTransition: CATransition
     var swipeImageView: UIImageView
-    var imagesCount: Int
+    public var imagesCount: Int
     var imageType: JKImageSliderViewImageType
     var placeHolder: UIImage
-    var imageAnimationDuration: CFTimeInterval {
+    public var imageAnimationDuration: CFTimeInterval {
         didSet {
             swipeViewTransition.duration = imageAnimationDuration
             bulletView?.animationDuration = imageAnimationDuration
         }
     }
     
-    var showBulletView: Bool {
+    public var showBulletView: Bool {
         didSet {
             bulletView?.hidden = !showBulletView
         }
     }
     
-    weak var delegate: JKSliderViewDelegate?
+    public weak var delegate: JKSliderViewDelegate?
     var bulletView: JKBulletView?
     
-    var swipeEnabled: Bool {
+    public var swipeEnabled: Bool {
         didSet {
             if swipeEnabled == true {
                 if let leftSwipe = leftSwipeGestureRecognizer, rightSwipe = rightSwipeGestureRecognizer {
@@ -63,7 +62,7 @@ class JKImageSliderView: UIView {
         }
     }
     
-    init (images: [UIImage], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = true) {
+    public init (images: [UIImage], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = true) {
         self.images = images
         self.imageURLs = []
         self.imagesCount = self.images.count
@@ -81,7 +80,7 @@ class JKImageSliderView: UIView {
         self.setupImageViews()
     }
     
-    init (imageURLs: [NSURL], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = true) {
+    public init (imageURLs: [NSURL], transitionType: String = kCATransitionFade, placeholderImage: UIImage? = nil, showBullets: Bool = true) {
         self.images = []
         self.imageURLs = imageURLs
         self.imagesCount = self.imageURLs.count
@@ -186,7 +185,7 @@ class JKImageSliderView: UIView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
